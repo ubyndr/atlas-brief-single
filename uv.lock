@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "atlas-brief-single"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cs-plugin" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "cs-plugin", specifier = "==0.1.1", index = "https://test.pypi.org/simple/" }]
+
+[[package]]
+name = "cs-plugin"
+version = "0.1.1"
+source = { registry = "https://test.pypi.org/simple/" }
+sdist = { url = "https://test-files.pythonhosted.org/packages/b8/17/23e7c5855296ff0a39921f45d301cba7457f4eacbdc0b8944c1e3a21cfc1/cs_plugin-0.1.1.tar.gz", hash = "sha256:9ba0a8c685ba395009a85c8f1b8d3e603c6ec98f18a20916976837e9cfcdfc28", size = 18240 }
+wheels = [
+    { url = "https://test-files.pythonhosted.org/packages/cf/ca/c32fd314ebca42375d43fa85679444820229a86991b7a7b93c6aea029936/cs_plugin-0.1.1-py3-none-any.whl", hash = "sha256:f956c62645fc3f5dfe069f01546cd4c56ade2ce4dbb7de306819572378fb3b13", size = 15241 },
+]

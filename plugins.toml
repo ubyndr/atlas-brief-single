@@ -1,0 +1,17 @@
+# The Claude Code plugins this project uses, each pinned to a release.
+# Managed with cs-plugin (add, remove, upgrade); after editing by hand, run
+# `cs-plugin generate`. Teammates run `cs-plugin sync` after cloning.
+# The atlas-brief workflow itself is not a plugin: it is the skill in
+# .claude/skills/atlas-brief/, versioned by this repo's commits.
+
+[project]
+name = "atlas-brief-single"
+
+[sources]
+repos = ["ubyndr/atlas-skills-release-test"]
+
+[plugins]
+author-annotation-columns = "0.4.0"
+onto-mapping = "0.5.0"
+paper-access = "0.3.0"
+remote-h5ad-obs = "0.3.0"

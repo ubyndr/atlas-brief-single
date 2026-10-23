@@ -1,0 +1,6 @@
+.claude/settings.local.json
+.venv/
+.env
+# Re-fetchable inputs; the brief and the CL mapping are the results to keep.
+projects/*/obs.parquet
+projects/*/papers/

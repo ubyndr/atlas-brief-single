@@ -1,0 +1,56 @@
+{
+  "name": "atlas-brief-single-plugins",
+  "owner": {
+    "name": "cs-plugin"
+  },
+  "metadata": {
+    "description": "The plugins atlas-brief-single uses, each pinned to a release. Generated from plugins.toml by cs-plugin; do not edit."
+  },
+  "plugins": [
+    {
+      "name": "author-annotation-columns",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ubyndr/atlas-skills-release-test.git",
+        "path": "plugins/author-annotation-columns",
+        "ref": "author-annotation-columns--v0.4.0"
+      },
+      "description": "Find which obs columns hold the authors' own cell-type, tissue, developmental-stage and disease annotations, as opposed to the portal's standardised fields, cluster indices and QC."
+    },
+    {
+      "name": "onto-mapping",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ubyndr/atlas-skills-release-test.git",
+        "path": "plugins/onto-mapping",
+        "ref": "onto-mapping--v0.5.0"
+      },
+      "description": "Map annotator-written tissue, cell-type and developmental-stage strings to ontology terms from lexical and graph evidence, with per-ontology advice documents for the conventions that produce confidently wrong answers."
+    },
+    {
+      "name": "paper-access",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ubyndr/atlas-skills-release-test.git",
+        "path": "plugins/paper-access",
+        "ref": "paper-access--v0.3.0"
+      },
+      "description": "Retrieve papers as tagged article XML where it can be had, probe how much of each a search index holds, fetch their supplementary material, and say honestly which papers and files nobody can reach."
+    },
+    {
+      "name": "remote-h5ad-obs",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ubyndr/atlas-skills-release-test.git",
+        "path": "plugins/remote-h5ad-obs",
+        "ref": "remote-h5ad-obs--v0.3.0"
+      },
+      "description": "Read the per-cell obs table out of a remote h5ad over HTTP range requests, without downloading the expression matrix."
+    },
+    {
+      "name": "atlas-brief-single-set",
+      "source": "./atlas-brief-single-set",
+      "description": "Installs every plugin atlas-brief-single uses, at the release pinned in plugins.toml. Carries nothing of its own."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "extraKnownMarketplaces": {
+    "atlas-brief-single-plugins": {
+      "source": {
+        "source": "directory",
+        "path": "./.claude/cs-plugin"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "author-annotation-columns@atlas-brief-single-plugins": true,
+    "onto-mapping@atlas-brief-single-plugins": true,
+    "paper-access@atlas-brief-single-plugins": true,
+    "remote-h5ad-obs@atlas-brief-single-plugins": true,
+    "atlas-brief-single-set@atlas-brief-single-plugins": true
+  }
+}
